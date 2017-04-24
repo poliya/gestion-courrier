@@ -1,0 +1,81 @@
+#form {
+    height: 600px;
+    width: 50%;
+    padding: 0px;
+    margin:0 auto;
+}
+
+input{
+    border-radius: 3px;
+    border:1px solid gray;
+}
+
+textarea{
+    border-radius: 3px;
+    border:1px solid gray;
+}
+
+#form input[type="submit"]{
+    padding:5px 10px;
+    margin-left: 3px;
+    background-color: #555555;
+    cursor: pointer;
+}
+
+select{
+    border-radius: 3px;
+}
+#form fieldset{ 
+    border-radius: 7px;
+    background-color: #ECEADF;
+    margin-bottom: 10px;
+    border:1px solid #C1A815;
+}
+
+legend {
+    background-color: #ECEADF;
+    border: 1px solid #C1A815;
+    border-radius: 6px;
+    padding: 3px 3px;
+    text-align: left;
+}
+
+#nature{
+    float:right;
+    margin-right: 250px;
+    position: relative;
+    bottom: 18px;
+}
+
+#Arrive{
+    float:left;
+}
+
+#Arrive input{
+    width: 130px;
+}
+
+#Du{
+    float:right;
+    position: relative;
+    left:-200px;
+}
+
+#objet label{
+    position: relative;
+    bottom: 15px;
+}
+
+#objet textarea{
+    margin-left: 50px;
+}
+
+input[type="text"] {
+margin-bottom: 20px;
+}
+
+.row label{
+ float: left;
+ width: 75px;
+ padding-right: 15px;
+}

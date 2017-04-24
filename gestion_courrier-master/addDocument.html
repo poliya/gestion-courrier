@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ajouter document</title>
+    <link rel="stylesheet" type="text/css" href="css/style_adddocument.css">
+    <script>
+        var typeDocument;
+        var typeDocumentDetailee;
+
+        function showDocumentDetails(str) {
+            typeDocument = str;
+
+            showDocumentdate('default');
+            if (str == 'Dossier') {
+                document.getElementById("form_input_dossier_div").style.display = "block";
+                document.getElementById("form_input_courrier_div").style.display = "none";
+            }
+            if (str == 'Courrier') {
+                document.getElementById("form_input_courrier_div").style.display = "block";
+                document.getElementById("form_input_dossier_div").style.display = "none";
+            }
+            if (str == 'default') {
+                document.getElementById("form_input_courrier_div").style.display = "none";
+                document.getElementById("form_input_dossier_div").style.display = "none";
+            }
+        }
+
+        function showDocumentdate(str) {
+            typeDocumentDetailee = str;
+            if (str == 'interne' || str == 'externe') {
+                document.getElementById("form_input_date_div").style.display = "block";
+                document.getElementById("document_date_fin_div").style.display = "block";
+            }
+            if (str == 'bon_de_commande' || str == 'marche') {
+                document.getElementById("form_input_date_div").style.display = "block";
+                document.getElementById("document_date_fin_div").style.display = "none";
+
+            }
+            if (str == 'default') {
+                document.getElementById("form_input_date_div").style.display = "none";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="container_div">
+        <form action="validate_ajouter_document.php" method="post" enctype="multipart/form-data">
+
+            <div id="form_input_div">
+                <select id="document_type_id" name="document_type" onchange="showDocumentDetails(this.value)">
+							<option value="default" selected="">type document...</option>
+  							<option value="Courrier">Courrier</option>
+  							<option value="Dossier">Dossier</option>
+					</select>
+            </div>
+
+            <div id="form_input_dossier_div">
+                <select id="dossier_type_id" name="dossier_type" onchange="showDocumentdate(this.value)" required>
+                    <option value="default" selected="">type Dossier...</option>
+                    <option value="bon_de_commande">bon de commande</option>
+                    <option value="marche">marche</option>
+                </select>
+            </div>
+
+            <div id="form_input_courrier_div">
+                <select id="courrier_type_id" name="courrier_type" onchange="showDocumentdate(this.value)" required>
+                    	<option value="default" selected="">type Courrier...</option>
+                    	<option value="interne">interne</option>
+                    	<option value="externe">externe</option>
+                </select>
+            </div>
+
+            <div id="form_input_date_div">
+                <div id="document_date_saisi_div">
+                    <p class="document_date_p">date de saisie:</p>
+                    <input type="date" id="document_date_saisi" name="date_saisi" required/>
+                </div>
+                <div id="document_date_fin_div">
+                    <p class="document_date_p">date de fin:</p>
+                    <input type="date" id="document_date_fin" name="date_expire" />
+                </div>
+                <div id="form_document_details_div">
+                   
+                    <input class="form_document_details_input" type="text" name="reference" placeholder="reference" required/>
+                    <input class="form_document_details_input" type="text" name="service_reference" placeholder="service reference" required/>
+                    <input class="form_document_details_input" type="text" name="source" placeholder="source" required/>
+                    <input class="form_document_details_input" type="text" name="destination" placeholder="destination" required/>
+                    <input class="form_document_details_input" type="text" name="objet" placeholder="objet" required/>
+
+                    
+                    <div class="form_document_details_input">
+                        <p style="margin=0px">scan:</p>
+                        <input class="" type="file" name="scan" placeholder="scan" required/>
+                    </div>
+                    
+                    <input id="submit_button" type="submit" value="Ajouter" onclick="submitButton()">
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

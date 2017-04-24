@@ -1,0 +1,45 @@
+img{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	z-index: -1;
+}
+#form_div{
+	position:relative;
+	opacity: 20;
+}
+.login__form {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+#login__input_name{
+	width: auto;
+	margin-bottom: 20px;
+}
+#login__input_pass{
+	width: auto;
+	margin-bottom: 20px;
+	
+}
+#login__submit{
+	width: auto;
+	margin-bottom: 20px;
+	
+}
+#black_back_div{
+
+	position: absolute;
+	width:100%;
+	height: 100%;
+	z-index: 0;
+	background-color: black;
+    opacity: 0.5;
+}
+#login__issue_text{
+	color: white;
+}

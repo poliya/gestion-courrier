@@ -1,0 +1,163 @@
+body{
+	margin:0;
+	font-family:arial, helvetica, sans-serif;
+}
+
+/*           */
+#bigtopbar{
+	background-color:white; 
+	width:100%;
+	height:100px;
+	color:white;
+	
+}
+#smalltopbar{
+	background-color:white; 
+	margin-top: 20px;
+	width:100%;
+	height:100px;
+	color:white;
+}
+
+.textbigtopbar{
+	color: #000d39;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-family: "Century Gothic " , sans-serif;
+	font-size: 3em;
+}
+
+
+.textsmalltopbar{
+	color: #000d39;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: "Century Gothic " , sans-serif;
+	font-size: 1.4em;
+	box-shadow: 0px 1px;
+	
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+
+.textsmalltopbar:hover{
+	color: white;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color:#000d39;
+	font-family: "Century Gothic " , sans-serif;
+	font-size: 1.4em;
+	box-shadow: 0px 1px;
+
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+a:link, a:visited { 
+    color: (internal value);
+    text-decoration: none;
+    cursor: auto;
+}
+
+#viewdatatable {
+	color: white;
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+
+.tableelmenthead{
+	height: 26px;
+    background-color:#000d39 ;
+	border-right:1px solid white;
+
+}
+.tableelmentbody{
+	color:black;
+	height: 26px;
+	border-right:1px solid black;
+}
+.tableelmentbodyparag{
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.tableelmentheadparag{
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+input {
+    width: auto;
+    height: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+select {
+    width: auto;
+    height: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border:0px;
+
+}
+#ajouterbutton{
+
+}
+
+#ajouterbutton{
+	color: green;
+	margin-top: 0px;
+    margin-bottom: 0px;
+    padding:5px;
+	font-family: "Century Gothic " , sans-serif;
+	font-size: 1.1em;
+	box-shadow: 0px 0.5px;
+	
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+
+#ajouterbutton:hover{
+	
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:5px;
+	font-family: "Century Gothic " , sans-serif;
+	color: white;
+	background-color:green;
+	font-size: 1.1em;
+	box-shadow: 0px 0.5px;
+
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+body{
+	padding-right: 10px;
+	padding-left: 10px
+}
+
+
+
+
+
+
+
